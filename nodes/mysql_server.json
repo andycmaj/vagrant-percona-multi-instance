@@ -1,12 +1,18 @@
 {
     "mysql": {
-        "server_debian_password" : "password",
-        "server_repl_password"   : "password",
-        "server_root_password"   : "password",
-        "allow_remote_root"      : true,
-        "bind_address"           : "0.0.0.0"
+        "server_root_password": "password",
+        "allow_remote_root": true,
+        "client": {
+            "packages": %w{Percona-Server-client-56}
+        }
+    },
+    "percona": {
+        "server": {
+            "package": "Percona-Server-server-56"
+            "shared_pkg": "Percona-Server-shared-56"
+        }
     },
     "run_list": [
-        "recipe[mysql::server]"
+        "recipe[percona::server]"
     ]
 }
