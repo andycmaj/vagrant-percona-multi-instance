@@ -1,0 +1,12 @@
+{
+    "mysql": {
+        "server_debian_password" : "password",
+        "server_repl_password"   : "password",
+        "server_root_password"   : "password",
+        "allow_remote_root"      : true,
+        "bind_address"           : "0.0.0.0"
+    },
+    "run_list": [
+        "recipe[mysql::server]"
+    ]
+}

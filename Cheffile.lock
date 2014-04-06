@@ -1,0 +1,18 @@
+SITE
+  remote: http://community.opscode.com/api/v1
+  specs:
+    build-essential (1.4.4)
+    chef_handler (1.1.5)
+    homebrew (1.5.4)
+    mysql (4.1.2)
+      build-essential (~> 1.4)
+      homebrew (>= 0.0.0)
+      openssl (~> 1.1)
+      windows (>= 0.0.0)
+    openssl (1.1.0)
+    windows (1.30.0)
+      chef_handler (>= 0.0.0)
+
+DEPENDENCIES
+  mysql (>= 0)
+
