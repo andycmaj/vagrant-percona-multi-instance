@@ -1,4 +1,5 @@
-/cookbooks/
-/tmp/librarian/
+cookbooks/
+tmp/
 *.un~
 .vagrant
+mysql_scripts/
