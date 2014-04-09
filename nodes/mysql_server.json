@@ -1,16 +1,7 @@
 {
     "mysql": {
         "server_root_password": "password",
-        "allow_remote_root": true,
-        "client": {
-            "packages": %w{Percona-Server-client-56}
-        }
-    },
-    "percona": {
-        "server": {
-            "package": "Percona-Server-server-56"
-            "shared_pkg": "Percona-Server-shared-56"
-        }
+        "allow_remote_root": true
     },
     "run_list": [
         "recipe[percona::server]"
