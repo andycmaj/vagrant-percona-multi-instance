@@ -1,5 +1,5 @@
 {
-    "instance_ports": [ 3306, 3307, 3308 ],
+    "instance_ports": [ 3306, 3307 ],
     "percona": {
         "server": {
             "role": "multi_instance",
