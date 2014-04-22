@@ -1,5 +1,10 @@
 {
-    "instance_ports": [ 3306, 3307 ],
+    "instance_ports": [ 3306, 3307, 3308, 3309 ],
+    "db_bootstrappers" : [
+        "/etc/mysql/bootstrap_scripts/*.sql",
+        "/etc/mysql/appcon_grants.sql",
+        "/etc/mysql/machines.sql"
+    ],
     "percona": {
         "server": {
             "disable_firewall": true,
