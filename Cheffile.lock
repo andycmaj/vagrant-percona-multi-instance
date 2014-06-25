@@ -1,18 +1,18 @@
 SITE
   remote: http://community.opscode.com/api/v1
   specs:
-    apt (2.3.8)
+    apt (2.4.0)
     build-essential (1.4.4)
     mysql (3.0.12)
       build-essential (~> 1.4)
       openssl (~> 1.1)
     openssl (1.1.0)
-    yum (3.1.6)
+    yum (3.2.2)
 
 GIT
   remote: https://github.com/andycmaj/chef-percona.git
   ref: master
-  sha: 94699c05a9c74492f5e47b987fbb13a406cdd648
+  sha: 2a0cb99fb6b2ecf435be3570c40b2d1dbf0b6978
   specs:
     percona (0.14.5)
       apt (>= 1.9)
