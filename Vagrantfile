@@ -36,7 +36,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.provider :parallels do |p|
     p.name = "mysql_centos"
     p.check_guest_tools = true
-    p.memory = 1024
+    p.memory = 2048
     p.cpus = 1
   end
   #
