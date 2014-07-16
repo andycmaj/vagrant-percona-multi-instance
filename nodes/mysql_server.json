@@ -14,6 +14,7 @@
         }
     },
     "run_list": [
-        "recipe[percona::server]"
+        "recipe[percona::server]",
+        "recipe[percona::run_bootstrap_scripts]"
     ]
 }
